@@ -40,4 +40,6 @@ add_executable(ar_demo_node src/ar_demo_node.cpp)
    ${catkin_LIBRARIES} ${OpenCV_LIBS}
  )
 
-
+install(TARGETS ar_demo_node
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

@@ -26,3 +26,7 @@ add_executable(benchmark_publisher
     )
 
 target_link_libraries(benchmark_publisher ${catkin_LIBRARIES})
+
+install(TARGETS benchmark_publisher
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

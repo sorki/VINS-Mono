@@ -54,4 +54,6 @@ add_executable(vins_estimator
 
 target_link_libraries(vins_estimator ${catkin_LIBRARIES} ${OpenCV_LIBS} ${CERES_LIBRARIES}) 
 
-
+install(TARGETS vins_estimator
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

@@ -35,3 +35,7 @@ add_executable(feature_tracker
     )
 
 target_link_libraries(feature_tracker ${catkin_LIBRARIES} ${OpenCV_LIBS})
+
+install(TARGETS feature_tracker
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
